@@ -1,0 +1,40 @@
+@import '../../base/variables';
+@import '../../base/mixins';
+
+header {
+  background-color: $header-color;
+}
+
+.navigation {
+  @include flex($justify-content: space-between, $align-items: center);
+  .logo {
+    h1 {
+      span {
+        &:first-child {
+          color: $font-color-secondary;
+          font-weight: 100;
+          font-family: $logo-font;
+        }
+        color: $header-accents-color;
+        font-weight: 700;
+        font-family: $logo-font;
+      }
+    }
+  }
+  .nav-list {
+    @include flex($justify-content: space-between, $align-items: center);
+    list-style: none;
+    li {
+      margin-left: 1.5rem;
+      &:first-child {
+        a {
+          color: #e58a20;
+        }
+      }
+      a {
+        color: $font-color-secondary;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import 'header';
+.content {
+  margin: auto;
+  max-width: $content-width;
+}
+
+//header
+header {
+  min-height: 6rem;
+  .navigation {
+    max-width: $content-width;
+    margin: 0 auto;
+  }
+}
+
+//section banner
+.banner {
+  min-height: 35rem;
+  .banner-container {
+    max-width: $content-width + 300px;
+    margin: 0 auto;
+    .slides {
+      max-width: $content-width;
+      padding: 0 8rem;
+    }
+  }
+}
